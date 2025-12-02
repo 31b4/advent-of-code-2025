@@ -11,5 +11,4 @@ for id in ids:
                 ans += n
                 break
         
-
 print(ans)
