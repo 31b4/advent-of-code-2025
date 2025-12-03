@@ -1,0 +1,2 @@
+f=lambda l,n:int(''.join(l[i]for i in sorted((lambda r:[r.append(max((i for i in range(len(l))if i not in r),key=lambda i:int(''.join(l[j]for j in sorted(r+[i]))+'9'*(n+~len(r)))))or r for _ in' '*n][-1])([]))))
+[print(sum(f(l,n)for l in open('i.txt').read().split()))for n in(2,12)]
